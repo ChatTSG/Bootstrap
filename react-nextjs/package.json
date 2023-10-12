@@ -3,7 +3,7 @@
   "homepage": "http://ChatTSG.github.io/Bootstrap",
   "version": "0.0.0",
   "private": true,
-  "repository": "twbs/examples",
+  "repository": "ChatTSG/Bootstrap",
   "license": "MIT",
   "stackblitz": {
     "startCommand": "npm start"
@@ -13,7 +13,9 @@
     "start": "next dev",
     "lint": "next lint",
     "fix": "next lint --fix",
-    "test": "npm run build"
+    "test": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/node": "^20.4.4",
