@@ -1,5 +1,6 @@
 {
   "name": "react-nextjs",
+  "homepage": "http://ChatTSG.github.io/Bootstrap",
   "version": "0.0.0",
   "private": true,
   "repository": "twbs/examples",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "eslint": "^8.45.0",
     "eslint-config-next": "^13.4.12",
+    "gh-pages": "^6.0.0",
     "sass": "^1.64.1"
   }
 }
