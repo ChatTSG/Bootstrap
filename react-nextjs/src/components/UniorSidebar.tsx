@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const SidebarComponent = () => {
   return (
@@ -9,7 +10,8 @@ const SidebarComponent = () => {
           <div className="d-flex justify-content-between">
             <div className="d-flex align-items-center">
               <div className="avatar avatar-sm">
-                <img src="assets/img/avatars/user.png" alt="" />
+                <Image src="/assets/img/avatars/user.png" />
+
               </div>
               <div className="ms-2">
                 <h6 className="mb-0">realtheme</h6>

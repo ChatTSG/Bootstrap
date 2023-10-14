@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchModal = () => {
   return (
-    <div className="modal fade" id="searchModal" tabIndex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div className="modal fade" id="searchModal" tabIndex={-1} aria-labelledby="searchModalLabel" aria-hidden="true">
       {/* ... Modal content for Search ... */}
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
