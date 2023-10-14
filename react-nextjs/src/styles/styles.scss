@@ -1,6 +1,10 @@
 $success: #7952b3;
 
-@import "bootstrap/scss/bootstrap.scss";
+//@import "bootstrap/scss/bootstrap.scss";
+
+// uniorStyles.scss
+@import '../assets/scss/style';  // Update the path according to the actual path of the Unior CSS file
+
 
 body {
   padding: 1.5rem;
