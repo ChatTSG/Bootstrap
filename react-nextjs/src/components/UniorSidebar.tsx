@@ -10,8 +10,7 @@ const SidebarComponent = () => {
           <div className="d-flex justify-content-between">
             <div className="d-flex align-items-center">
               <div className="avatar avatar-sm">
-                <Image src="/assets/img/avatars/user.png" />
-
+                  <Image src="/assets/img/avatars/user.png" alt="User Avatar" width={40} height={40} />
               </div>
               <div className="ms-2">
                 <h6 className="mb-0">realtheme</h6>
