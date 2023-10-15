@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import AppGuides from "@/components/AppGuides";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/UniorFooter";
+import Header from "@/components/UniorHeader";
 import ExampleComponents from "@/components/ExampleComponents";
 
 export default function Home() {
