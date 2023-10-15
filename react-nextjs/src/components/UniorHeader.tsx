@@ -1,5 +1,5 @@
 import Link from "next/link";
-import userImg from './path-to/assets/img/avatars/user.png'; // Update the path
+import userImg from '../assets/img/avatars/user.png'; // Update the path
 
 const Header: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Header: React.FC = () => {
             <div className="d-flex justify-content-between">
               <div className="d-flex align-items-center">
                 <div className="avatar avatar-sm">
-                  <img src={userImg} alt="" />
+                <Image src={userImg} alt="User Avatar" width={50} height={50} />
                 </div>
                 <div className="ms-2">
                   <h6 className="mb-0">realtheme</h6>
