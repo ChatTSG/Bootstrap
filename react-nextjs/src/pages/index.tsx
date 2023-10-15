@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <UniorHead title="Home Page" />
-      <Container as="main" className="wrapper bg-noise">
+      <Container as="div" className="wrapper bg-noise">
         <UniorHeader />
         <UniorMain />
         <UniorSidebar />
