@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import AppGuides from "@/components/AppGuides";
-import Footer from "@/components/UniorFooter";
-import Header from "@/components/UniorHeader";
+import UniorFooter from "@/components/UniorFooter";
+import UniorHeader from "@/components/UniorHeader";
 import ExampleComponents from "@/components/ExampleComponents";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container as="main" className="py-4 px-3 mx-auto">
-        <Header />
+        <UniorHeader />
 
         <h1>Build Bootstrap with React</h1>
 
@@ -24,7 +24,7 @@ export default function Home() {
         <hr className="col-1 my-5 mx-0" />
 
         <AppGuides />
-        <Footer />
+        <UniorFooter />
       </Container>
     </>
   );
