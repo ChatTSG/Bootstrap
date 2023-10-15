@@ -1,9 +1,10 @@
-import Head from "next/head";
-import Container from "react-bootstrap/Container";
-import AppGuides from "@/components/AppGuides";
-import UniorFooter from "@/components/UniorFooter";
+
 import UniorHeader from "@/components/UniorHeader";
-import ExampleComponents from "@/components/ExampleComponents";
+import UniorMain from '@/components/UniorMain';
+import UniorSidebar from '@/components/UniorSidebar';
+import UniorSearchModal from '@/components/UniorSearchModal';
+import UniorSettingsModal from '@/components/UniorSettingsModal';
+import UniorFooter from "@/components/UniorFooter";
 
 export default function Home() {
   return (
@@ -14,18 +15,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container as="main" className="py-4 px-3 mx-auto">
-        <UniorHeader />
 
-        <h1>Build Bootstrap with React</h1>
-
-        <ExampleComponents />
-
-        <hr className="col-1 my-5 mx-0" />
-
-        <AppGuides />
-        <UniorFooter />
-      </Container>
+      <UniorHeader />
+      <UniorMain />
+      <UniorSidebar />
+      <UniorSearchModal />
+      <UniorSettingsModal />
+      <UniorFooter />
+ 
     </>
   );
 }
