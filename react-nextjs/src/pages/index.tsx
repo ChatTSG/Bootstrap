@@ -16,10 +16,10 @@ export default function Home() {
         <UniorHeader />
         <UniorMain />
         <UniorSidebar />
-        <UniorSearchModal />
-        <UniorSettingsModal />
-        <UniorFooter />
       </Container>
+      <UniorSearchModal />
+      <UniorSettingsModal />
+      <UniorFooter />
     </>
   );
 }
