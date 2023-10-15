@@ -3,7 +3,7 @@ import userImg from '../assets/img/avatars/user.png'; // Update the path
 
 const Header: React.FC = () => {
   return (
-    <div className="wrapper bg-noise">
+    <div>
       {/* Navigation :: Start */}
       <div className="navigation hide-scrollbar bg-noise py-4" data-bs-theme="dark">
         {/* ... other navigation items ... */}
