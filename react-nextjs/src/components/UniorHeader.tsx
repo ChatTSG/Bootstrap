@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from 'next/image';  // Make sure to import Image
 import userImg from '../assets/img/avatars/user.png'; // Update the path
 
