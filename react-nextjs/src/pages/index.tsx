@@ -1,5 +1,6 @@
 
 import Head from "next/head";
+import Container from "react-bootstrap/Container";
 import UniorHeader from "@/components/UniorHeader";
 import UniorMain from '@/components/UniorMain';
 import UniorSidebar from '@/components/UniorSidebar';
@@ -16,14 +17,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <UniorHeader />
-      <UniorMain />
-      <UniorSidebar />
-      <UniorSearchModal />
-      <UniorSettingsModal />
-      <UniorFooter />
- 
+      <Container as="main" className="wrapper bg-noise">
+        <UniorHeader />
+        <UniorMain />
+        <UniorSidebar />
+        <UniorSearchModal />
+        <UniorSettingsModal />
+        <UniorFooter />
+      </Container>
     </>
   );
 }
