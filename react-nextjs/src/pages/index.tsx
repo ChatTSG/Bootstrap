@@ -1,4 +1,5 @@
 
+import Head from "next/head";
 import UniorHeader from "@/components/UniorHeader";
 import UniorMain from '@/components/UniorMain';
 import UniorSidebar from '@/components/UniorSidebar';
