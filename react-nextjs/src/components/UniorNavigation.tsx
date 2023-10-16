@@ -9,7 +9,7 @@ const Navigation = () => {
         <li className="nav-item position-relative mb-4">
           <a className="nav-link js-toggle-nav-compact" href="#" title="Toggle Compact">
             <i className="ri-side-bar-fill text-primary"></i>
-            <span className="nav-link-title text-uppercase me-17">Unior</span>
+            <span className="nav-link-title text-uppercase me-17">ChatTSG</span>
           </a>
           <span className="nav-close"><i className="ri-close-circle-fill"></i></span>
         </li>
@@ -81,7 +81,7 @@ const Navigation = () => {
         </div>
       </div>
 
-      <div className="card card-upgrade bg-quaternary border-0 mx-3 mt-auto">
+     {/* <div className="card card-upgrade bg-quaternary border-0 mx-3 mt-auto">
         <div className="card-body p-3">
           <div className="d-flex justify-content-between">
             <div className="d-flex align-items-center">
@@ -99,7 +99,7 @@ const Navigation = () => {
           </div>
           <a href="plans.html" className="btn btn-sm btn-outline-primary w-100 text-white mt-3" role="button">View Plans</a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
