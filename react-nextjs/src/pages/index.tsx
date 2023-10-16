@@ -13,6 +13,7 @@ export default function Home() {
       <UniorHead title="Home Page" />
       <Container as="div" className="wrapper bg-noise">
         <UniorNavigation />
+        <Container as="div" className="nav-backdrop"></Container>
         <UniorMain />
       </Container>
       <UniorSearchModal />
@@ -22,4 +23,3 @@ export default function Home() {
   );
 }
 
-       
