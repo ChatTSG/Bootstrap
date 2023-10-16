@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import userImg from '../assets/img/avatars/user.png'; // image path
+import UniorChatContent from '@/components/UniorChatContent';
 
 const MainComponent = () => {
   return (
@@ -42,6 +43,7 @@ const MainComponent = () => {
             <div className="chat" data-simplebar data-simplebar-auto-hide="true">
               <div className="chat-content">
                 {/* Chat content... */}
+                <UniorChatContent />
               </div>
             </div>
           </div>
