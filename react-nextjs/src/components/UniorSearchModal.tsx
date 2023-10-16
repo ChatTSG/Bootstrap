@@ -1,13 +1,20 @@
 import React from 'react';
 
-const SearchModal = () => {
+type SearchModalProps = {
+  show: boolean;
+  onHide: () => void;
+};
+
+const SearchModal: React.FC<SearchModalProps> = ({ show, onHide }) => {
   return (
-    <div className="modal fade" id="searchModal" tabIndex={-1} aria-labelledby="searchModalLabel" aria-hidden="true">
+<div className={`modal ${show ? 'show' : 'fade'}`} id="searchModal" tabIndex={-1} aria-labelledby="searchModalLabel" aria-hidden={!show}>
       <div className="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down modal-lg">
         <div className="modal-content">
           <div className="modal-header">
             <h1 className="modal-title h5" id="searchModalLabel">Quick Search</h1>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" className="btn-close" onClick={onHide} aria-label="Close"></button>
+
           </div>
           <div className="modal-body">
             {/* Form */}
@@ -31,7 +38,7 @@ const SearchModal = () => {
             {/* ... */}
           </div>
           <div className="modal-footer p-1">
-            <button type="button" className="btn btn-sm btn-quaternary" data-bs-dismiss="modal">Close</button>
+            <button type="button" className="btn btn-sm btn-quaternary" onClick={onHide}>Close</button>
           </div>
         </div>
       </div>
