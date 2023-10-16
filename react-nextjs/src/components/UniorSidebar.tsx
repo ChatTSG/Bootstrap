@@ -3,89 +3,14 @@ import Image from 'next/image';
 
 const SidebarComponent = () => {
   return (
-    <div className="navigation hide-scrollbar bg-noise py-4" data-bs-theme="dark">
-      <ul className="nav">
-        <li className="nav-item position-relative mb-4">
-          <a className="nav-link js-toggle-nav-compact" href="#" title="Toggle Compact">
-            <i className="ri-side-bar-fill text-primary"></i>
-            <span className="nav-link-title text-uppercase me-17">Unior</span>
-          </a>
-          <span className="nav-close"><i className="ri-close-circle-fill"></i></span>
-        </li>
-
-        {/* Chats */}
-        <li className="nav-item">
-          <a className="nav-link active" href="chat-list.html" title="Chats">
-            <i className="ri-chat-1-line text-info"></i>
-            <span className="nav-link-title">Chats</span>
-          </a>
-        </li>
-
-        {/* Search */}
-        <li className="nav-item">
-          <a className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search">
-            <i className="ri-search-eye-line text-success"></i>
-            <span className="nav-link-title">Search</span>
-          </a>
-        </li>
-
-        {/* Plans */}
-        <li className="nav-item">
-          <a className="nav-link" href="plans.html" title="Manage Plans">
-            <i className="ri-bank-card-line text-primary"></i>
-            <span className="nav-link-title">Manage Plans</span>
-          </a>
-        </li>
-
-        {/* Updates & FAQ */}
-        <li className="nav-item">
-          <a className="nav-link" href="faq.html" title="Updates & FAQ">
-            <i className="ri-voice-recognition-line text-danger"></i>
-            <span className="nav-link-title">Updates & FAQ</span>
-          </a>
-        </li>
-
-        {/* Settings */}
-        <li className="nav-item">
-          <a className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#settingsModal" title="Settings">
-            <i className="ri-settings-line text-warning"></i>
-            <span className="nav-link-title">Settings</span>
-          </a>
-        </li>
-      </ul>
-
-      {/* Collapse */}
-      <ul className="nav">
-        <li className="nav-item mt-3 border-top py-1">
-          <a className="nav-link" title="Chat List" data-bs-toggle="collapse" href="#collapseLabels" role="button" aria-expanded="false" aria-controls="collapseLabels">
-            <i className="ri-list-check-2 text-info"></i>
-            <span className="nav-link-title">
-              Chat List
-            </span>
-          </a>
-        </li>
-      </ul>
-      <div className="collapse-wrapper">
-        <div className="collapse" id="collapseLabels">
-          <ul className="nav">
-            {/* Welcome */}
-            <li className="nav-item">
-              <a className="nav-link active" href="chat-list.html" title="Welcome">
-                {/* SVG icon here */}
-                <span className="nav-link-title">Welcome</span>
-              </a>
-            </li>
-            {/* ... other items ... */}
-          </ul>
-        </div>
-      </div>
-
+    <div className="sidebar">
+      {/* Sidebar content... */}
       <div className="card card-upgrade bg-quaternary border-0 mx-3 mt-auto">
         <div className="card-body p-3">
           <div className="d-flex justify-content-between">
             <div className="d-flex align-items-center">
               <div className="avatar avatar-sm">
-                <Image src="/assets/img/avatars/user.png" alt="User Avatar" width={40} height={40} />
+                  <Image src="/assets/img/avatars/user.png" alt="User Avatar" width={40} height={40} />
               </div>
               <div className="ms-2">
                 <h6 className="mb-0">realtheme</h6>
