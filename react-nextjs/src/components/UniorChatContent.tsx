@@ -5,7 +5,7 @@ const UniorChatContent: React.FC = () => {
         <div className="chat-content">
             <div className="p-4 p-sm-6">
                 <div className="text-center mb-6">
-                    <h3 className="mb-1">Welcome to Unior - your presonal digital assistant</h3>
+                    <h3 className="mb-1">Welcome to ChatTSG - your presonal design assistant</h3>
                     <p className="fs-20 lead text-body-secondary">Unleash your creative potential with the power of AI.</p>
                 </div>
                 <div className="mx-auto" style={{ maxWidth: '512px' }}>

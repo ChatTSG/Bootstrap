@@ -27,6 +27,7 @@ const Navigation = () => {
           <a className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search">
             <i className="ri-search-eye-line text-success"></i>
             <span className="nav-link-title">Search</span>
+            <span className="badge bg-secondary px-2 py-0 fs-14"><i className="ri-command-line"></i>F</span>
           </a>
         </li>
 
@@ -51,6 +52,7 @@ const Navigation = () => {
           <a className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#settingsModal" title="Settings">
             <i className="ri-settings-line text-warning"></i>
             <span className="nav-link-title">Settings</span>
+            <span className="badge bg-secondary px-2 py-0 fs-14"><i className="ri-command-line"></i>P</span>
           </a>
         </li>
       </ul>
@@ -63,6 +65,7 @@ const Navigation = () => {
             <span className="nav-link-title">
               Chat List
             </span>
+            <span className="text-body-secondary"><i className="ri-arrow-down-s-line"></i></span>
           </a>
         </li>
       </ul>
