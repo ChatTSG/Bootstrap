@@ -1,8 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
-import userImg from '../assets/img/avatars/user.png'; // image path
+//import Image from 'next/image';
+//import userImg from '../assets/img/avatars/user.png'; // image path
+import { Modal, Button } from 'react-bootstrap';
+import SearchModal from './UniorSearchModal';
 
 const Navigation = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
 <div className="navigation hide-scrollbar bg-noise py-4" data-bs-theme="dark">
       <ul className="nav">
@@ -24,12 +27,14 @@ const Navigation = () => {
 
         {/* Search */}
         <li className="nav-item">
-          <a className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search">
-            <i className="ri-search-eye-line text-success"></i>
-            <span className="nav-link-title">Search</span>
-            <span className="badge bg-secondary px-2 py-0 fs-14"><i className="ri-command-line"></i>F</span>
-          </a>
-        </li>
+        <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); setShowModal(true); }} title="Search">
+          <i className="ri-search-eye-line text-success"></i>
+          <span className="nav-link-title">Search</span>
+          <span className="badge bg-secondary px-2 py-0 fs-14"><i className="ri-command-line"></i>F</span>
+        </a>
+      </li>
+
+      <SearchModal show={showModal} onHide={() => setShowModal(false)} />
 
         {/* Plans */}
         <li className="nav-item">
