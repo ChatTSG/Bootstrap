@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 //import Image from 'next/image';
 //import userImg from '../assets/img/avatars/user.png'; // image path
-import SearchModal from './UniorSearchModal';
+import UniorSearchModal from '@/components/UniorSearchModal';
+//import UniorSettingsModal from '@/components/UniorSettingsModal';
 
-const Navigation = () => {
+const UniorNavigation = () => {
   const [showModal, setShowModal] = useState(false);
+  const handleCloseModal = () => setShowModal(false);
+
   return (
 <div className="navigation hide-scrollbar bg-noise py-4" data-bs-theme="dark">
       <ul className="nav">
@@ -26,14 +29,13 @@ const Navigation = () => {
 
         {/* Search */}
         <li className="nav-item">
-        <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); setShowModal(true); }} title="Search">
-          <i className="ri-search-eye-line text-success"></i>
-          <span className="nav-link-title">Search</span>
-          <span className="badge bg-secondary px-2 py-0 fs-14"><i className="ri-command-line"></i>F</span>
-        </a>
-      </li>
-
-      <SearchModal show={showModal} onHide={() => setShowModal(false)} />
+                <a className="nav-link" href="#" onClick={(e) => { e.preventDefault(); setShowModal(true); }} title="Search">
+                    <i className="ri-search-eye-line text-success"></i>
+                    <span className="nav-link-title">Search</span>
+                    <span className="badge bg-secondary px-2 py-0 fs-14"><i className="ri-command-line"></i>F</span>
+                </a>
+            </li>
+            <UniorSearchModal show={showModal} onHide={handleCloseModal} />
 
         {/* Plans */}
         <li className="nav-item">
