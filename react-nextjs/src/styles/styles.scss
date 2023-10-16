@@ -3,7 +3,8 @@ $success: #7952b3;
 //@import "bootstrap/scss/bootstrap.scss";
 
 // uniorStyles.scss
-@import '../assets/scss/style';  // Update the path according to the actual path of the Unior CSS file
+@import '../assets/scss/style';  // Unior CSS file
+@import 'bootstrap-icons/font/bootstrap-icons.css'; // Bootstrap icons
 
 div#__next {
     height: 100%; 
