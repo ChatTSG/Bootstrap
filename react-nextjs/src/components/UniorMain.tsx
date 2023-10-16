@@ -1,4 +1,5 @@
 import React from 'react';
+import userImg from '../assets/img/avatars/user.png'; // image path
 
 const MainComponent = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import userImg from '../assets/img/avatars/user.png'; // Update the path
+import userImg from '../assets/img/avatars/user.png'; // image path
 
 const Navigation = () => {
   return (
