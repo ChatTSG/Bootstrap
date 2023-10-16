@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import userImg from '../assets/img/avatars/user.png'; // Update the path
 
 const Navigation = () => {
   return (
@@ -85,7 +86,7 @@ const Navigation = () => {
           <div className="d-flex justify-content-between">
             <div className="d-flex align-items-center">
               <div className="avatar avatar-sm">
-                  <Image src="/assets/img/avatars/user.png" alt="User Avatar" width={40} height={40} />
+                <Image src={userImg} alt="User Avatar" width={50} height={50} />
               </div>
               <div className="ms-2">
                 <h6 className="mb-0">realtheme</h6>

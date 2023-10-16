@@ -1,7 +1,6 @@
 
 import Container from "react-bootstrap/Container";
 import UniorHead from "@/components/UniorHead"; 
-import UniorHeader from "@/components/UniorHeader";
 import UniorMain from '@/components/UniorMain';
 import UniorNavigation from '@/components/UniorNavigation';
 import UniorSearchModal from '@/components/UniorSearchModal';
@@ -13,9 +12,8 @@ export default function Home() {
     <>
       <UniorHead title="Home Page" />
       <Container as="div" className="wrapper bg-noise">
-        <UniorHeader />
-        <UniorMain />
         <UniorNavigation />
+        <UniorMain />
       </Container>
       <UniorSearchModal />
       <UniorSettingsModal />
