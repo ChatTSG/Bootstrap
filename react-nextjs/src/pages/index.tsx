@@ -16,7 +16,7 @@ export default function Home() {
         <Container as="div" className="nav-backdrop"></Container>
         <UniorMain />
       </div>
-      <UniorSearchModal />
+      <UniorSearchModal show={someStateVariable} onHide={someHandlerFunction} />
       <UniorSettingsModal />
       {/*<UniorFooter />*/}
     </>
