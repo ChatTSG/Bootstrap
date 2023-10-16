@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import userImg from '../assets/img/avatars/user.png'; // image path
 
 const MainComponent = () => {
@@ -25,7 +26,7 @@ const MainComponent = () => {
               <i className="ri-layout-right-line"></i>
             </button>
             <div className="avatar avatar-sm mx-2">
-              <img src={userImg} alt="Avatar" />
+              <Image src={userImg} alt="Avatar" width={40} height={40} />
             </div>
             <div className="row align-items-center g-1 ms-1">
               <div className="col-auto">
