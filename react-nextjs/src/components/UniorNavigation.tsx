@@ -1,8 +1,8 @@
 import React from 'react';
 //import Image from 'next/image';
 //import userImg from '../assets/img/avatars/user.png'; // image path
-import { Modal, Button } from 'react-bootstrap';
 import SearchModal from './UniorSearchModal';
+import React, { useState } from 'react';
 
 const Navigation = () => {
   const [showModal, setShowModal] = useState(false);
