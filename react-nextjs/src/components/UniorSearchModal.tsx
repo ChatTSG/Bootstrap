@@ -8,19 +8,18 @@ type SearchModalProps = {
 const SearchModal: React.FC<SearchModalProps> = ({ show, onHide }) => {
   return (
     <div 
-      className={`modal ${show ? 'show' : 'fade'}`} 
+      className={`modal ${show ? 'show' : ''}`} 
       id="searchModal" 
       tabIndex={-1} 
       aria-labelledby="searchModalLabel" 
       aria-hidden={!show}
-      style={{ display: show ? 'block' : 'none' }} // <-- Add this line
+      style={{ display: show ? 'block' : 'none' }}
     >
       <div className="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down modal-lg">
         <div className="modal-content">
           <div className="modal-header">
-            <h1 className="modal-title h5" id="searchModalLabel">Quick Search</h1>
-            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <button type="button" className="btn-close" onClick={onHide} aria-label="Close"></button>
+            <h5 className="modal-title" id="searchModalLabel">Quick Search</h5>
+            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={onHide}></button>
           </div>
           <div className="modal-body">
             {/* Form */}
@@ -37,17 +36,17 @@ const SearchModal: React.FC<SearchModalProps> = ({ show, onHide }) => {
             </div>
             {/* Media */}
             {/* ... You can continue to add the media cards here ... */}
-            {/* For brevity, I'm not adding all the media cards, but you can continue in the same pattern */}
             <a href="#" className="text-reset text-decoration-none d-block mb-1">
               {/* ... Media card content ... */}
             </a>
-            {/* ... */}
           </div>
-          <div className="modal-footer p-1">
+          <div className="modal-footer">
             <button type="button" className="btn btn-sm btn-quaternary" onClick={onHide}>Close</button>
           </div>
         </div>
       </div>
+      {/* Backdrop */}
+      {show && <div className="modal-backdrop show"></div>}
     </div>
   );
 };
