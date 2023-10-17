@@ -7,14 +7,20 @@ type SearchModalProps = {
 
 const SearchModal: React.FC<SearchModalProps> = ({ show, onHide }) => {
   return (
-<div className={`modal ${show ? 'show' : 'fade'}`} id="searchModal" tabIndex={-1} aria-labelledby="searchModalLabel" aria-hidden={!show}>
+    <div 
+      className={`modal ${show ? 'show' : 'fade'}`} 
+      id="searchModal" 
+      tabIndex={-1} 
+      aria-labelledby="searchModalLabel" 
+      aria-hidden={!show}
+      style={{ display: show ? 'block' : 'none' }} // <-- Add this line
+    >
       <div className="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down modal-lg">
         <div className="modal-content">
           <div className="modal-header">
             <h1 className="modal-title h5" id="searchModalLabel">Quick Search</h1>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <button type="button" className="btn-close" onClick={onHide} aria-label="Close"></button>
-
           </div>
           <div className="modal-body">
             {/* Form */}
