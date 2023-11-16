@@ -27,7 +27,7 @@ const UniorNavigation = () => {
           </a>
         </li>
 
-        {/* Search */}
+        {/* Search 
         <li className="nav-item">
                 <a className="nav-link" href="#" onClick={(e) => { e.preventDefault(); setShowModal(true); }} title="Search">
                     <i className="ri-search-eye-line text-success"></i>
@@ -35,7 +35,7 @@ const UniorNavigation = () => {
                     <span className="badge bg-secondary px-2 py-0 fs-14"><i className="ri-command-line"></i>F</span>
                 </a>
             </li>
-            <UniorSearchModal show={showModal} onHide={handleCloseModal} />
+            <UniorSearchModal show={showModal} onHide={handleCloseModal} /> */}
 
         {/* Plans */}
         <li className="nav-item">
