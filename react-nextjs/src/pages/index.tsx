@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <UniorHead title="Home Page" />
       <div className="wrapper bg-noise">
-        <UniorNavigation />
+        {/*<UniorNavigation />*/}
         <Container as="div" className="nav-backdrop"></Container>
         <UniorMain />
       </div>
