@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import UniorHead from "@/components/UniorHead"; 
 import UniorMain from '@/components/UniorMain';
-import UniorNavigation from '@/components/UniorNavigation';
+//import UniorNavigation from '@/components/UniorNavigation';
 //import UniorFooter from "@/components/UniorFooter";
 
 export default function Home() {

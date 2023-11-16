@@ -1,11 +1,12 @@
 import React from 'react';
 
-const UniorChatContent: React.FC = () => {
+// Accept the prop, typically named something like onStartTalking
+const UniorChatContent: React.FC<{ onStartTalking: () => void }> = ({ onStartTalking }) => {
     return (
         <div className="chat-content">
             <div className="p-4 p-sm-6">
                 <div className="text-center mb-6">
-                    <h3 className="mb-1">Welcome to ChatTSG - your presonal design assistant</h3>
+                    <h3 className="mb-1">Welcome to ChatTSG - your personal design assistant</h3>
                     <p className="fs-20 lead text-body-secondary">Unleash your creative potential with the power of AI.</p>
                 </div>
                 <div className="mx-auto" style={{ maxWidth: '512px' }}>
@@ -37,7 +38,8 @@ const UniorChatContent: React.FC = () => {
                     ))}
                 </div>
                 <div className="d-flex align-items-center mt-6">
-                    <a className="btn btn-primary mx-auto" href="#" role="button">Start Talking</a>
+                    {/* Attach the onStartTalking function to the onClick event of the link */}
+                    <a className="btn btn-primary mx-auto" href="#" role="button" onClick={onStartTalking}>Start Talking</a>
                 </div>
             </div>
         </div>

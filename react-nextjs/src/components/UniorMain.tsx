@@ -2,6 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import userImg from '../assets/img/avatars/user.png'; // image path
 import UniorChatContent from '@/components/UniorChatContent';
+import UniorChatInterface from './UniorChatInterface'; // Import your new chat interface component
+
+const MainComponent = () => {
+  const [startChat, setStartChat] = useState(false);
+
+  const handleStartTalking = () => {
+    setStartChat(true);
+  }
 
 const MainComponent = () => {
   return (
@@ -41,10 +49,11 @@ const MainComponent = () => {
         <div className="main-content">
           <div className="main-body">
             <div className="chat" data-simplebar data-simplebar-auto-hide="true">
-              <div className="chat-content">
-                {/* Chat content... */}
-                <UniorChatContent />
-              </div>
+            <div className="chat-content">
+              {!startChat ? 
+                <UniorChatContent onStartTalking={handleStartTalking} /> : 
+                <UniorChatInterface />}
+            </div>
             </div>
           </div>
           {/* Sidebar Component */}
